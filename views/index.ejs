@@ -1,33 +1,202 @@
-<!doctype html>
-<html>
-<head>
-    <title>Node Authentication</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <style>
-        body         { padding-top:80px; }
-    </style>
-</head>
-<body>
-<div class="container">
-
-    <div class="jumbotron text-center">
-        <h1><span class="fa fa-lock"></span> Node Authentication</h1>
-
-        <p>Login or Register with:</p>
-
-        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
-        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
-        <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
-        <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google+</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="roinflames &amp; mvelilla">
+    <title>DM-FASIMC, Dispensario Medicinal de Cannabis</title>
+    <!-- Bootstrap Core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS-->
+    <link href="stylesheets/agency.css" rel="stylesheet">
+    <!-- Custom Fonts-->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    <body id="page-top" class="index"><!-- Header-->
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">DM-FASIMC</div>
+      <div class="intro-lead-in">Proveemos acceso de primera calidad a Cannabis Medicinal y asistencia a pacientes en todo Chile!</div><a href="#benefits" class="page-scroll btn btn-xl">Conocer más!</a>
     </div>
-
-    <div class="text-center">
-        <p>A demo by <a href="http://scotch.io">Scotch</a>.</p>
-        <p>Visit the <a href="http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local">tutorial</a>.</p>
+  </div>
+</header>
+<!-- Services Section-->
+<section id="benefits">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Beneficios</h2>
+        <h3 class="section-subheading text-muted">Breve descripción de los beneficios de ser miembro/socio de FASIMC.</h3>
+      </div>
     </div>
-
-</div>
-</body>
+    <div class="row text-center">
+      <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></span>
+        <h4 class="service-heading">Derechos Humanos</h4>
+        <p class="text-muted">Marihuana medicinal, recreativa y de investigación + desarrollo + Innovación</p>
+      </div>
+      <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-laptop fa-stack-1x fa-inverse"></i></span>
+        <h4 class="service-heading">Discresión
+          <label for=""></label>
+        </h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-lock fa-stack-1x fa-inverse"></i></span>
+        <h4 class="service-heading">Ambiente Amigable y Seguro</h4>
+        <p class="text-muted">lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End navbar theme-->
+<!-- Team Section-->
+<section id="testimonies" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">TESTIMONIOS</h2>
+        <h3 class="section-subheading text-muted">Relatos de socios respecto a su experiencia junto a FASIMC.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member"><img src="img/team/1.jpg" alt="" class="img-responsive img-circle"/>
+          <h4>Kay Garland</h4>
+          <p class="text-muted">Artritis</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member"><img src="img/team/2.jpg" alt="" class="img-responsive img-circle"/>
+          <h4>Larry Parker</h4>
+          <p class="text-muted">Fibromialgia</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member"><img src="img/team/3.jpg" alt="" class="img-responsive img-circle"/>
+          <h4>Diana Pertersen</h4>
+          <p class="text-muted">Epilepsia</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted">Cumplimos un rol social integral, medicinal, revolucionario, espiritual, terapeutico y recreacional para todos los usuarios de Cannabis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Asociados-->
+<aside id="asociated" class="clients">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6"><a href="http://www.latinoamericareforma.cl/"><img src="img/logos/envato.jpg" alt="" class="img-responsive img-centered"/></a></div>
+      <div class="col-md-3 col-sm-6"><a href="http://dispensarionacional.cl/"><img src="img/logos/designmodo.jpg" alt="" class="img-responsive img-centered"/></a></div>
+      <div class="col-md-3 col-sm-6"><a href="https://www.facebook.com/greenlifeasociacion/"><img src="img/logos/themeforest.jpg" alt="" class="img-responsive img-centered"/></a></div>
+      <div class="col-md-3 col-sm-6"><a href="https://www.facebook.com/B1O2C3I4/"><img src="img/logos/creative-market.jpg" alt="" class="img-responsive img-centered"/></a></div>
+    </div>
+  </div>
+</aside>
+<!-- Contact Section-->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Contacto</h2>
+        <h3 class="section-subheading text-muted">Fono, Email, Whatsapp, Telegram, Señales de humo :D, Emotíconos, envíanos tus dudas que pronto las resolveremos!</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="contactForm" name="sentMessage" novalidate="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input id="name" type="text" placeholder="Nombre *" required="" data-validation-required-message="Por favor indique su nombre." class="form-control"/>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input id="email" type="email" placeholder="Email *" required="" data-validation-required-message="Por favor indique dirección de correo electrónico." class="form-control"/>
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input id="phone" type="tel" placeholder="Teléfono *" required="" data-validation-required-message="Porfavor indique número de contacto." class="form-control"/>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <textarea id="message" placeholder="Mensaje *" required="" data-validation-required-message="Por favor indique su requerimiento." class="form-control"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-xl">Enviar mensaje</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <p class="copyright"> - © 2017 Copy Left. Debes tener al menos 18 años para usar este sitio.</p>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com/FASIMC/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-md-4"><span>DIRECCION: CATEDRAL 1009 OF 601<br/> ATENCION: 10:00 A 18:00 HRS
+                                TEL: +56999467416<br/> Correo: DM@FASIMC.ORG
+                                A PASOS DEL METRO PLAZA DE ARMAS</span></div>
+    </div>
+  </div>
+</footer>
+<!-- Bootstrap Core JavaScript-->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<!-- Plugin JavaScript-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+<!-- Contact Form JavaScript-->
+<script src="javascripts/jqBootstrapValidation.js"></script>
+<script src="javascripts/contact_me.js"></script>
+<!-- Theme JavaScript-->
+<script src="javascripts/agency.js"></script></body>
+    <!--Navbar theme-->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display-->
+        <div class="navbar-header page-scroll">
+          <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span> Menu<i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand page-scroll"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling-->
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden"><a href="#page-top"></a></li>
+            <li><a href="#benefits" class="page-scroll">BENEFICIOS</a></li>
+            <li><a href="#testimonies" class="page-scroll">TESTIMONIOS</a></li>
+            <li><a href="#asociated" class="page-scroll">ASOCIADOS</a></li>
+            <li><a href="#contact" class="page-scroll">CONTACTO</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> REGISTRO</a></li>
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> INGRESA</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
 </html>

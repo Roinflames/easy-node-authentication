@@ -1,0 +1,18 @@
+{"Dispensario":
+ [
+  {"Flores":
+   [
+    {"Nombre":"AK","Cantidad":10},
+    {"Nombre":"Kali","Cantidad":20},
+    {"Nombre":"Yellow Submarine","Cantidad":30}
+   ]
+  },
+  {"Parafernalia":
+   [
+    {"Nombre":"Bong","Cantidad":8000000000000000000000000},
+    {"Nombre":"Soplete","Cantidad":15},
+    {"Nombre":"Quemador","Cantidad":50}
+   ]
+  }
+ ]
+}
