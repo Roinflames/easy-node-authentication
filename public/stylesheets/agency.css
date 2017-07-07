@@ -13,6 +13,9 @@ body {
 .text-primary {
   color: #fed136;
 }
+table {
+  color: black;
+}
 p {
   font-size: 14px;
   line-height: 1.75;
