@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="roinflames &amp; mvelilla">
-    <title>DM-FASIMC, Dispensario Medicinal de Cannabis</title>
-    <!-- Bootstrap Core CSS-->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Theme CSS-->
-    <link href="stylesheets/agency.css" rel="stylesheet">
-    <!-- Custom Fonts-->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
-    <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-  </head>
-</html>
-<body id="page-top" class="index"></body>
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body         { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body>
 <!--Navbar theme-->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display-->
     <div class="navbar-header page-scroll">
-      <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span> Menu<i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand page-scroll"></a>
+      <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle navigation</span> Menu<i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand page-scroll">DM-FASIMC</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling-->
     <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="hidden"><a href="#page-top"></a></li>
-        <li><a href="#testimonies" class="page-scroll">STOCK</a></li>
+        <li><a href="/stock" class="page-scroll">STOCK</a></li>
         <li><a href="https://reservahora.setmore.com/" class="page-scroll">RESERVA TU HORA</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -41,645 +29,104 @@
     </div>
   </div>
 </nav>
-<!-- Header-->
-<header>
-  <div class="container">
-    <br>
-    <br>
-    <br>
-    <h1>CATÁLOGO</h1>
-    <table id="catalogo" class="display" width="100%" cellspacing="0">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Clasificación</th>
-                <th>THC</th>
-                <th>CBD</th>
-                <th>CBN</th>
-                <th>CNC</th>
-                <th>STOCK</th>
-                <th>FICHA</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Tiger</td>
-                <td>Nixon</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Garrett</td>
-                <td>Winters</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Ashton</td>
-                <td>Cox</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Cedric</td>
-                <td>Kelly</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Airi</td>
-                <td>Satou</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Brielle</td>
-                <td>Williamson</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Herrod</td>
-                <td>Chandler</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Rhona</td>
-                <td>Davidson</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Colleen</td>
-                <td>Hurst</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Sonya</td>
-                <td>Frost</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jena</td>
-                <td>Gaines</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Quinn</td>
-                <td>Flynn</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Charde</td>
-                <td>Marshall</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Haley</td>
-                <td>Kennedy</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Tatyana</td>
-                <td>Fitzpatrick</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Michael</td>
-                <td>Silva</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Paul</td>
-                <td>Byrd</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Gloria</td>
-                <td>Little</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Bradley</td>
-                <td>Greer</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Dai</td>
-                <td>Rios</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jenette</td>
-                <td>Caldwell</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Yuri</td>
-                <td>Berry</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Caesar</td>
-                <td>Vance</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Doris</td>
-                <td>Wilder</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Angelica</td>
-                <td>Ramos</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Gavin</td>
-                <td>Joyce</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jennifer</td>
-                <td>Chang</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Brenden</td>
-                <td>Wagner</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Fiona</td>
-                <td>Green</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Shou</td>
-                <td>Itou</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Michelle</td>
-                <td>House</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Suki</td>
-                <td>Burks</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Prescott</td>
-                <td>Bartlett</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Gavin</td>
-                <td>Cortez</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Martena</td>
-                <td>Mccray</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Unity</td>
-                <td>Butler</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Howard</td>
-                <td>Hatfield</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Hope</td>
-                <td>Fuentes</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Vivian</td>
-                <td>Harrell</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Timothy</td>
-                <td>Mooney</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jackson</td>
-                <td>Bradshaw</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Olivia</td>
-                <td>Liang</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Bruno</td>
-                <td>Nash</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Sakura</td>
-                <td>Yamamoto</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Thor</td>
-                <td>Walton</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Finn</td>
-                <td>Camacho</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Serge</td>
-                <td>Baldwin</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Zenaida</td>
-                <td>Frank</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Zorita</td>
-                <td>Serrano</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jennifer</td>
-                <td>Acosta</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Cara</td>
-                <td>Stevens</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Hermione</td>
-                <td>Butler</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Lael</td>
-                <td>Greer</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Jonas</td>
-                <td>Alexander</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Shad</td>
-                <td>Decker</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Michael</td>
-                <td>Bruce</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-            <tr>
-                <td>Donna</td>
-                <td>Snider</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>%</td>
-                <td>Edinburgh</td>
-                <td>$320,800</td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
-</header>
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <p class="copyright">DM FASIMC - © 2017 Copy Left. Debes tener al menos 18 años para usar este sitio.</p>
-      </div>
-      <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.facebook.com/FASIMC/?ref=br_rs"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-      </div>
-      <div class="col-md-4"><span>DIRECCION: CATEDRAL 1009 OF 601<br> ATENCION: 10:00 A 18:00 HRS
-                                TEL: +56999467416<br> Correo: DM@FASIMC.ORG
-                                A PASOS DEL METRO PLAZA DE ARMAS</span></div>
+
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Perfil</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Desconectar</a>
     </div>
-  </div>
-</footer>
-<!-- Bootstrap Core JavaScript-->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!-- jQuery-->
-<script src="vendor/jquery/jquery.min.js"></script>
-<!-- Plugin JavaScript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-<!-- Contact Form JavaScript-->
-<script src="javascripts/jqBootstrapValidation.js"></script>
-<script src="javascripts/contact_me.js"></script>
-<!-- Theme JavaScript-->
-<script src="javascripts/agency.js"></script>
-<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#catalogo').DataTable( {
-        columnDefs: [ {
-            targets: [ 0 ],
-            orderData: [ 0, 1 ]
-        }, {
-            targets: [ 1 ],
-            orderData: [ 1, 0 ]
-        }, {
-            targets: [ 4 ],
-            orderData: [ 4, 0 ]
-        } ]
-    } );
-} );
-</script>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id / Nombre</strong>: <%= user._id %> / Nombre<br>
+                        <strong>email</strong>: <%= user.local.email %><br>
+                        <strong>Tipo Membresia</strong>: <%= user.local.email %><br>
+                        <strong>Expiración</strong>: <%= user.local.email %><br>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Eliminar</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+
+        <!-- FACEBOOK INFORMATION
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-primary"><span class="fa fa-facebook"></span> Facebook</h3>
+
+                check if the user has this token (is the user authenticated with this social account)
+                <% if (user.facebook.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.facebook.id %><br>
+                        <strong>token</strong>: <%= user.facebook.token %><br>
+                        <strong>email</strong>: <%= user.facebook.email %><br>
+                        <strong>name</strong>: <%= user.facebook.name %><br>
+                    </p>
+                    <a href="/unlink/facebook" class="btn btn-primary">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/facebook" class="btn btn-primary">Connect Facebook</a>
+                <% } %>
+
+            </div>
+        </div>-->
+    </div>
+    <div class="row">
+
+        <!-- TWITTER INFORMATION
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
+
+                <% if (user.twitter.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.twitter.id %><br>
+                        <strong>token</strong>: <%= user.twitter.token %><br>
+                        <strong>display name</strong>: <%= user.twitter.displayName %><br>
+                        <strong>username</strong>: <%= user.twitter.username %>
+                    </p>
+                    <a href="/unlink/twitter" class="btn btn-info">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/twitter" class="btn btn-info">Connect Twitter</a>
+                <% } %>
+
+            </div>
+        </div>-->
+
+        <!-- GOOGLE INFORMATION
+        <div class="col-sm-6">
+            <div class="well">
+                <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google+</h3>
+
+                <% if (user.google.token) { %>
+                    <p>
+                        <strong>id</strong>: <%= user.google.id %><br>
+                        <strong>token</strong>: <%= user.google.token %><br>
+                        <strong>email</strong>: <%= user.google.email %><br>
+                        <strong>name</strong>: <%= user.google.name %>
+                    </p>
+                    <a href="/unlink/google" class="btn btn-danger">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/google" class="btn btn-danger">Connect Google</a>
+                <% } %>
+
+            </div>
+        </div>-->
+    </div>
+</div>
+</body>
+</html>
+
+    FASIMC
+
+    © 2017 Copyleft
