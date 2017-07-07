@@ -156,7 +156,7 @@ module.exports = function(app, passport) {
         user.local.email    = undefined;
         user.local.password = undefined;
         user.save(function(err) {
-            res.redirect('/profile');
+            res.redirect('/');
         });
     });
 
