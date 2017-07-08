@@ -1,12 +1,23 @@
 doctype html
-html
+html(lang='en')
   head
-    title Node Authentication
-    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
-    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
-    style.
-      body         { padding-top:80px; word-wrap:break-word; }
-  body
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='roinflames & mvelilla')
+    title DM-FASIMC, Dispensario Medicinal de Cannabis
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    // Theme CSS
+    link(href='stylesheets/agency.css', rel='stylesheet')
+    // Custom Fonts
+    link(href='vendor/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Kaushan+Script', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+  body#page-top.index
     // Navbar theme
     nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
       .container-fluid
@@ -25,38 +36,49 @@ html
             li
               a.page-scroll(href='/stock') STOCK
             li
-              a.page-scroll(href='https://reservahora.setmore.com/') RESERVA TU HORA
+              a.page-scroll(href='https://reservahora.setmore.com/' target="_blank") RESERVA TU HORA
           ul.nav.navbar-nav.navbar-right
             li
               a(href='/logout')
                 span.glyphicon.glyphicon-log-in
-                | DESCONÉCTATE
-    .container
-      .page-header.text-center
-        h1
-          span.fa.fa-anchor
-          |  Perfil
-        a.btn.btn-default.btn-sm(href='/logout') Desconectar
-      .row
-        // LOCAL INFORMATION
-        .col-sm-6
-          .well
-            h3
+                |  DESCONECTAR
+    section
+      .container
+        .col-lg-6.text-center
+          .page-header
+            h1
               span.fa.fa-user
-              |  Local
-            if (user.local.email) 
-              strong nombre | #{nombre}
-              br
-              strong id | #{user._id}
-              br
-              strong email | : #{user.local.email} 
-              br
-              strong Tipo Membresia | :  #{user.local.email}
-              br
-              strong Expiración | :  #{user.local.email} 
-              br
-              a.btn.btn-default(href='/unlink/local') Eliminar
-            else
-              a.btn.btn-default(href='/connect/local') Connect Local           
-|     FASIMC
-|     © 2017 Copyleft
+              |  Bienvenido
+            a.btn.btn-default.btn-sm(href='/logout') Desconectar      
+
+        .col-lg-6
+          .container          
+            .well
+              h3
+                table#user.display(width='100%', cellspacing='0')
+                  tr                  
+                    th Usuario: #{user.local.email}                                
+              if (user.local.email)                     
+                table
+                  tr
+                    th ID Usuario
+                    td :
+                    td #{user._id}
+                  tr
+                    th Contacto
+                    td :
+                    td #{user.local.email}
+                  tr
+                    th Membresía
+                    td :
+                    td #{user.local.email}
+                  tr
+                    th Expitación
+                    td :
+                    td #{user.local.email}
+              else
+                a.btn.btn-default(href='/connect/local') Connect Local  
+    footer.text-center
+      p         
+      |     FASIMC
+      |     © 2017 Copyleft
