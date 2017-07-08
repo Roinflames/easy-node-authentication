@@ -1,18 +1,172 @@
-{"Dispensario":
- [
-  {"Flores":
-   [
-    {"Nombre":"AK","Cantidad":10},
-    {"Nombre":"Kali","Cantidad":20},
-    {"Nombre":"Yellow Submarine","Cantidad":30}
-   ]
-  },
-  {"Parafernalia":
-   [
-    {"Nombre":"Bong","Cantidad":8000000000000000000000000},
-    {"Nombre":"Soplete","Cantidad":15},
-    {"Nombre":"Quemador","Cantidad":50}
-   ]
-  }
- ]
+{"Flores":
+   {
+     "AK": {
+        "cantidad": 13,
+        "thc": 25,
+        "cbd": 8,
+        "cbn": 6,
+        "cnc": 4,
+        "ficha": "ficha"
+     },
+     "n2": {
+        "cantidad": 133,
+        "thc": 12.5,
+        "cbd": 8,
+        "cbn": 6,
+        "cnc": 4,
+        "ficha": "ficha"
+     },
+     "n3": {
+        "cantidad": 13,
+        "thc": 12.5,
+        "cbd": 8,
+        "cbn": 6,
+        "cnc": 4,
+        "ficha": "ficha"
+     },
+     "n4": {
+        "cantidad": 133,
+        "thc": 12.5,
+        "cbd": 8,
+        "cbn": 6,
+        "cnc": 4,
+        "ficha": "ficha"
+     },
+     "n5": {
+        "cantidad": 13,
+        "thc": 12.5,
+        "cbd": 8,
+        "cbn": 6,
+        "cnc": 4,
+        "ficha": "ficha"
+     },
+     "n6": {
+        "cantidad": 133,
+        "thc": 12.5,
+        "cbd": 15,
+        "cbn": 12,
+        "cnc": 8,
+        "ficha": "ficha"
+     },
+     "n7": {
+        "cantidad": 13,
+        "thc": 12.5,
+        "cbd": 15,
+        "cbn": 12,
+        "cnc": 8,
+        "ficha": "ficha"
+     },
+     "n8": {
+        "cantidad": 133,
+        "thc": 12.5,
+        "cbd": 15,
+        "cbn": 12,
+        "cnc": 8,
+        "ficha": "ficha"
+     },
+     "n9": {
+        "cantidad": 13,
+        "thc": 12.5,
+        "cbd": 15,
+        "cbn": 12,
+        "cnc": 8,
+        "ficha": "ficha"
+     },
+     "n10": {
+        "cantidad": 133,
+        "thc": 12.5,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n11": {
+        "cantidad": 13,
+        "thc": 50,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n12": {
+        "cantidad": 133,
+        "thc": 50,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n13": {
+        "cantidad": 13,
+        "thc": 50,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n14": {
+        "cantidad": 133,
+        "thc": 50,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n15": {
+        "cantidad": 13,
+        "thc": 50,
+        "cbd": 12,
+        "cbn": 12,
+        "cnc": 10,
+        "ficha": "ficha"
+     },
+     "n16": {
+        "cantidad": 133,
+        "thc": 50,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     },
+     "n17": {
+        "cantidad": 13,
+        "thc": 25,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     },
+     "n18": {
+        "cantidad": 133,
+        "thc": 25,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     },
+     "n19": {
+        "cantidad": 13,
+        "thc": 25,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     },
+     "n20": {
+        "cantidad": 133,
+        "thc": 25,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     },
+     "n21": {
+        "cantidad": 13,
+        "thc": 25,
+        "cbd": 15,
+        "cbn": 10,
+        "cnc": 6,
+        "ficha": "ficha"
+     }
+   }
 }

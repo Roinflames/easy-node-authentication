@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    title Node Authentication
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+    style.
+      body         { padding-top:80px; word-wrap:break-word; }
+  body
+    // Navbar theme
+    nav#mainNav.navbar.navbar-default.navbar-custom.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |  Menu
+            i.fa.fa-bars
+          a.navbar-brand.page-scroll(href='#page-top') DM-FASIMC
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='/stock') STOCK
+            li
+              a.page-scroll(href='https://reservahora.setmore.com/') RESERVA TU HORA
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/logout')
+                span.glyphicon.glyphicon-log-in
+                | DESCONÉCTATE
+    .container
+      .page-header.text-center
+        h1
+          span.fa.fa-anchor
+          |  Perfil
+        a.btn.btn-default.btn-sm(href='/logout') Desconectar
+      .row
+        // LOCAL INFORMATION
+        .col-sm-6
+          .well
+            h3
+              span.fa.fa-user
+              |  Local
+            if (user.local.email) 
+              strong nombre | #{nombre}
+              br
+              strong id | #{user._id}
+              br
+              strong email | : #{user.local.email} 
+              br
+              strong Tipo Membresia | :  #{user.local.email}
+              br
+              strong Expiración | :  #{user.local.email} 
+              br
+              a.btn.btn-default(href='/unlink/local') Eliminar
+            else
+              a.btn.btn-default(href='/connect/local') Connect Local           
+|     FASIMC
+|     © 2017 Copyleft

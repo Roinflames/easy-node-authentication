@@ -29,7 +29,7 @@ app.use(bodyParser.json()); // get information from html forms
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join('public')));
 
-app.set('view engine', 'ejs'); // set up ejs for templating
+app.set('view engine', 'pug'); // set up engine for templating
 
 // required for passport
 app.use(session({
