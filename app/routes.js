@@ -40,10 +40,18 @@ module.exports = function(app, passport) {
 
         app.get('/stock', function(req, res) {
             var consultaFlor = stock.Flores
-            //Cantidades
+            //Nombres
+            var nombre1 = consultaFlor.n1.nombre, nombre2 = consultaFlor.n2.nombre, nombre3 = consultaFlor.n3.nombre,
+            nombre4 = consultaFlor.n4.nombre, nombre5 = consultaFlor.n5.nombre, nombre6 = consultaFlor.n6.nombre,
+            nombre7 = consultaFlor.n7.nombre, nombre8 = consultaFlor.n8.nombre, nombre9 = consultaFlor.n9.nombre,
+            nombre10 = consultaFlor.n10.nombre, nombre11 = consultaFlor.n11.nombre, nombre12 = consultaFlor.n12.nombre,
+            nombre13 = consultaFlor.n13.nombre, nombre14 = consultaFlor.n14.nombre, nombre15 = consultaFlor.n15.nombre,
+            nombre16 = consultaFlor.n16.nombre, nombre17 = consultaFlor.n17.nombre, nombre18 = consultaFlor.n18.nombre,
+            nombre19 = consultaFlor.n19.nombre, nombre20 = consultaFlor.n20.nombre, nombre21 = consultaFlor.n21.nombre
+            //Variedades
             var variedad1 = "Índica", variedad2 = "Sativa", variedad3 = "Híbrido"
-
-            var cantidad1 = consultaFlor.AK.cantidad, cantidad2 = consultaFlor.n2.cantidad, cantidad3 = consultaFlor.n3.cantidad,
+            //Cantidades
+            var cantidad1 = consultaFlor.n1.cantidad, cantidad2 = consultaFlor.n2.cantidad, cantidad3 = consultaFlor.n3.cantidad,
             cantidad4 = consultaFlor.n4.cantidad, cantidad5 = consultaFlor.n5.cantidad, cantidad6 = consultaFlor.n6.cantidad,
             cantidad7 = consultaFlor.n7.cantidad, cantidad8 = consultaFlor.n8.cantidad, cantidad9 = consultaFlor.n9.cantidad,
             cantidad10 = consultaFlor.n10.cantidad, cantidad11 = consultaFlor.n11.cantidad, cantidad12 = consultaFlor.n12.cantidad,
@@ -51,35 +59,44 @@ module.exports = function(app, passport) {
             cantidad16 = consultaFlor.n16.cantidad, cantidad17 = consultaFlor.n17.cantidad, cantidad18 = consultaFlor.n18.cantidad,
             cantidad19 = consultaFlor.n19.cantidad, cantidad20 = consultaFlor.n20.cantidad, cantidad21 = consultaFlor.n21.cantidad
             //%thc
-            var thc1 = consultaFlor.AK.thc, thc2 = consultaFlor.n2.thc, thc3 = consultaFlor.n3.thc, thc4 = consultaFlor.n4.thc,
+            var thc1 = consultaFlor.n1.thc, thc2 = consultaFlor.n2.thc, thc3 = consultaFlor.n3.thc, thc4 = consultaFlor.n4.thc,
             thc5 = consultaFlor.n5.thc, thc6 = consultaFlor.n6.thc, thc7 = consultaFlor.n7.thc, thc8 = consultaFlor.n8.thc,
             thc9 = consultaFlor.n9.thc, thc10 = consultaFlor.n10.thc, thc11 = consultaFlor.n11.thc, thc12 = consultaFlor.n12.thc,
             thc13 = consultaFlor.n13.thc, thc14 = consultaFlor.n14.thc, thc15 = consultaFlor.n15.thc, thc16 = consultaFlor.n16.thc,
             thc17 = consultaFlor.n17.thc, thc18 = consultaFlor.n18.thc, thc19 = consultaFlor.n18.thc, thc20 = consultaFlor.n20.thc,
             thc21 = consultaFlor.n21.thc
 
-            var cbd1 = consultaFlor.AK.cbd, cbd2 = consultaFlor.n2.cbd, cbd3 = consultaFlor.n3.cbd, cbd4 = consultaFlor.n4.cbd,
+            var cbd1 = consultaFlor.n1.cbd, cbd2 = consultaFlor.n2.cbd, cbd3 = consultaFlor.n3.cbd, cbd4 = consultaFlor.n4.cbd,
             cbd5 = consultaFlor.n5.cbd, cbd6 = consultaFlor.n6.cbd, cbd7 = consultaFlor.n7.cbd, cbd8 = consultaFlor.n8.cbd,
             cbd9 = consultaFlor.n9.cbd, cbd10 = consultaFlor.n10.cbd, cbd11 = consultaFlor.n11.cbd, cbd12 = consultaFlor.n12.cbd,
             cbd13 = consultaFlor.n13.cbd, cbd14 = consultaFlor.n14.cbd, cbd15 = consultaFlor.n15.cbd, cbd16 = consultaFlor.n16.cbd,
             cbd17 = consultaFlor.n17.cbd, cbd18 = consultaFlor.n18.cbd, cbd19 = consultaFlor.n19.cbd, cbd20 = consultaFlor.n20.cbd,
             cbd21 = consultaFlor.n21.cbd
 
-            var cbn1 = consultaFlor.AK.cbn, cbn2 = consultaFlor.n2.cbn, cbn3 = consultaFlor.n3.cbn, cbn4 = consultaFlor.n4.cbn,
+            var cbn1 = consultaFlor.n1.cbn, cbn2 = consultaFlor.n2.cbn, cbn3 = consultaFlor.n3.cbn, cbn4 = consultaFlor.n4.cbn,
             cbn5 = consultaFlor.n5.cbn, cbn6 = consultaFlor.n6.cbn, cbn7 = consultaFlor.n7.cbn, cbn8 = consultaFlor.n8.cbn,
-             cbn9 = consultaFlor.n9.cbn, cbn10 = consultaFlor.n10.cbn, cbn11 = consultaFlor.n11.cbn, cbn12 = consultaFlor.n12.cbn,
-             cbn13 = consultaFlor.n13.cbn, cbn14 = consultaFlor.n14.cbn, cbn15 = consultaFlor.n15.cbn, cbn16 = consultaFlor.n15.cbn,
-             cbn17 = consultaFlor.n17.cbn, cbn18 = consultaFlor.n18.cbn, cbn19 = consultaFlor.n19.cbn, cbn20 = consultaFlor.n20.cbn,
-             cbn21 = consultaFlor.n21.cbn
+            cbn9 = consultaFlor.n9.cbn, cbn10 = consultaFlor.n10.cbn, cbn11 = consultaFlor.n11.cbn, cbn12 = consultaFlor.n12.cbn,
+            cbn13 = consultaFlor.n13.cbn, cbn14 = consultaFlor.n14.cbn, cbn15 = consultaFlor.n15.cbn, cbn16 = consultaFlor.n15.cbn,
+            cbn17 = consultaFlor.n17.cbn, cbn18 = consultaFlor.n18.cbn, cbn19 = consultaFlor.n19.cbn, cbn20 = consultaFlor.n20.cbn,
+            cbn21 = consultaFlor.n21.cbn
 
-            var cnc1
+            var cnc1 = consultaFlor.n1.cnc, cnc2 = consultaFlor.n2.cnc, cnc3 = consultaFlor.n3.cnc, cnc4 = consultaFlor.n4.cnc,
+            cnc5 = consultaFlor.n5.cnc, cnc6 = consultaFlor.n6.cnc, cnc7 = consultaFlor.n7.cnc, cnc8 = consultaFlor.n8.cnc,
+            cnc9 = consultaFlor.n9.cnc, cnc10 = consultaFlor.n10.cnc, cnc11 = consultaFlor.n11.cnc, cnc12 = consultaFlor.n12.cnc,
+            cnc13 = consultaFlor.n13.cnc, cnc14 = consultaFlor.n14.cnc, cnc15 = consultaFlor.n15.cnc, cnc16 = consultaFlor.n15.cnc,
+            cnc17 = consultaFlor.n17.cnc, cnc18 = consultaFlor.n18.cnc, cnc19 = consultaFlor.n19.cnc, cnc20 = consultaFlor.n20.cnc,
+            cnc21 = consultaFlor.n21.cnc
 
             var ficha1
 
             res.render('stock', { message: req.flash('loginMessage'),
 
-              indica:variedad1, sativa:variedad2, hibryd:variedad3,
-              
+              nombre1:nombre1,nombre2:nombre2,nombre3:nombre3,nombre4:nombre4,nombre5:nombre5,nombre6:nombre6,nombre7:nombre7,nombre8:nombre8,nombre9:nombre9,nombre10:nombre10,
+              nombre11:nombre11,nombre12:nombre12,nombre13:nombre13,nombre14:nombre14,nombre15:nombre15,nombre16:nombre16,nombre17:nombre17,nombre18:nombre18,nombre19:nombre19,
+              nombre20:nombre20,nombre21:nombre21,
+
+              indica:variedad1, sativa:variedad2, hybrid:variedad3,
+
               cantidad1:cantidad1, cantidad2:cantidad2, cantidad3:cantidad3, cantidad4:cantidad4,
               cantidad5:cantidad5, cantidad6:cantidad6, cantidad7:cantidad7, cantidad8:cantidad8,
               cantidad9:cantidad9, cantidad10:cantidad10, cantidad11:cantidad11, cantidad12:cantidad12,
@@ -98,6 +115,10 @@ module.exports = function(app, passport) {
               cbn1:cbn1,cbn2:cbn2,cbn3:cbn3,cbn4:cbn4,cbn5:cbn5,cbn6:cbn6,cbn7:cbn7,cbn8:cbn8,cbn9:cbn9,cbn10:cbn10,
               cbn11:cbn11,cbn12:cbn12,cbn13:cbn13,cbn14:cbn14,cbn15:cbn15,cbn16:cbn16,cbn17:cbn17,cbn18:cbn18,cbn19:cbn19,cbn20:cbn20,
               cbn21:cbn21,
+
+              cnc1:cnc1,cnc2:cnc2,cnc3:cnc3,cnc4:cnc4,cnc5:cnc5,cnc6:cnc6,cnc7:cnc7,cnc8:cnc8,cnc9:cnc9,cnc10:cnc10,
+              cnc11:cnc11,cnc12:cnc12,cnc13:cnc13,cnc14:cnc14,cnc15:cnc15,cnc16:cnc16,cnc17:cnc17,cnc18:cnc18,cnc19:cnc19,cnc20:cnc20,
+              cnc21:cnc21,
             });
         });
 
