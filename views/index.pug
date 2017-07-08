@@ -134,11 +134,11 @@ html(lang='en')
         .row
           .col-lg-12.text-center
             h2.section-heading Contacto
-            h3.section-subheading.text-muted
-              | Fono, Email, Whatsapp, Telegram, Señales de humo :D, Emotíconos, envíanos tus dudas que pronto las resolveremos!
+            br
+            br          
         .row
-          .col-lg-12
-            form#contactForm(name='sentMessage', novalidate='')
+          .col-lg-12            
+            form#contactForm(name='sentMessage', novalidate='' action="<?=$_SERVER['PHP_SELF'];?>" method="post")
               .row
                 .col-md-6
                   .form-group

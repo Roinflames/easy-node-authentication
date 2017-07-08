@@ -49,62 +49,6 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-.img-centered {
-  margin: 0 auto;
-}
-.bg-light-gray {
-  background-color: #eeeeee;
-}
-.bg-darkest-gray {
-  background-color: #222222;
-}
-.btn-primary {
-  color: white;
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.dropdown-menu {
-  background-color: #000000;
-}
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  color: white;
-  background-color: #fec503;
-  border-color: #f6bf01;
-}
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-  background-image: none;
-}
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-  background-color: #fed136;
-  border-color: #fed136;
-}
-.btn-primary .badge {
-  color: #fed136;
-  background-color: white;
-}
 /* Boton conoce mas*/
 .btn-xl {
   color: white;
@@ -164,9 +108,21 @@ fieldset[disabled] .btn-xl.active {
 }
 /*Color y fuente  boton index*/
 .navbar-custom .navbar-brand {
-  color: #ffffff;
+  color: #39ac73;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+/* Navbar activo*/
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 10;
+  color: white;
+  background-color: #39ac73;
+}
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #39ac73;
+}
+/* End Navbar activo*/
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -200,18 +156,62 @@ fieldset[disabled] .btn-xl.active {
   color: #39ac73;
   outline: none;
 }
-/* Navbar activo*/
-.navbar-custom .navbar-nav > .active > a {
-  border-radius: 10;
-  color: white;
-  background-color: #39ac73;
+.img-centered {
+  margin: 0 auto;
 }
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
-  background-color: #39ac73;
+.bg-light-gray {
+  background-color: #eeeeee;
 }
-/* End Navbar activo*/
+.bg-darkest-gray {
+  background-color: #222222;
+}
+.btn-primary {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.dropdown-menu {
+  background-color: #000000;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+.btn-primary .badge {
+  color: #fed136;
+  background-color: white;
+}
 header {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
