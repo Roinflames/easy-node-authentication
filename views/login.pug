@@ -27,17 +27,21 @@ html
             span.sr-only Toggle navigation
             |  Menu
             i.fa.fa-bars
-          a.navbar-brand.page-scroll(href='/') DM-FASIMC
+          a.navbar-brand.page-scroll(href='/') DM-FASIMC        
         // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse          
+          ul.nav.navbar-nav.navbar-right            
+            li
+              a(href='/signup')
+                span.glyphicon.glyphicon-user
+                |  REGISTRO            
             li
               a(href='/')
                 span.glyphicon.glyphicon-log-in
-                |  Volver    
-  section
+                |  Volver              
+  section.bg-light-gray
     .container
-      .col-sm-6.col-sm-offset-3
+      .col-lg-6.col-sm-6.col-sm-offset-3
         h1
           span.fa.fa-sign-in
           |  Login
@@ -50,7 +54,7 @@ html
             input.form-control(type='text', name='email')
           .form-group
             label Password
-            input.form-control(type='password', name='password')
+            input.form-control(type='password', name='password')      
           button.btn.btn-warning.btn-lg(type='submit') Login
         hr
         p
@@ -59,13 +63,4 @@ html
         p
           | Or go
           a(href='/') home
-          | .
-        .text-center
-          p
-            | A demo by
-            a(href='http://scotch.io') Scotch
-            | .
-          p
-            | Visit the
-            a(href='http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local') tutorial
-            | .
+          | .                            
