@@ -49,7 +49,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
-/* Boton conoce mas*/
+/* Boton conocer mas*/
 .btn-xl {
   color: white;
   background-color: #2d862d;
@@ -99,7 +99,7 @@ fieldset[disabled] .btn-xl.active {
 }
 /* END Boton conoce mas*/
 
-/*NAVBAR*/
+/*NAVBAR DM-FASIMCS*/
 /*color, ancho y borde navbar*/
 .navbar-custom {
   background-color: #222222;
@@ -108,7 +108,7 @@ fieldset[disabled] .btn-xl.active {
 }
 /*Color y fuente  boton index*/
 .navbar-custom .navbar-brand {
-  color: #39ac73;
+  color: #2d862d;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 /* Navbar activo*/
@@ -283,7 +283,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;    
+    padding: 150px 0;
   }
 }
 .service-heading {
