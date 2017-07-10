@@ -2,191 +2,212 @@
    {
      "n1": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n2": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n3": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n4": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n5": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n6": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n7": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n8": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 8,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n9": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n10": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n11": {
         "nombre": "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n12": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n13": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n14": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n15": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n16": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n17": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n18": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n19": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n20": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      },
      "n21": {
         "nombre" : "nombre",
-        "cantidad": 0,
+        "clasificacion": "clasificacion",
         "thc": 0,
         "cbd": 0,
         "cbn": 0,
         "cnc": 0,
+        "cantidad": 0,
         "ficha": "ficha"
      }
    }
