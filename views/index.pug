@@ -11,6 +11,7 @@ html(lang='en')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
     // Theme CSS
     link(href='stylesheets/agency.css', rel='stylesheet')
+    link(href='stylesheets/style.css', rel='stylesheet')
     // Custom Fonts
     link(href='vendor/font-awesome/css/font-awesome.css', rel='stylesheet', type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
@@ -102,11 +103,17 @@ html(lang='en')
           // Wrapper for slides
           .carousel-inner
             .item.active
-              img(src='/img/la.jpg', alt='Los Angeles', style='width:100%;')
+              img(class="center-block image", src='/img/la.jpg', alt='Los Angeles', style='width:70%;')
+              .middle
+                .text Hello World
             .item
-              img(src='/img/chicago.jpg', alt='Chicago', style='width:100%;')
+              img(class="center-block image", src='/img/chicago.jpg', alt='Chicago', style='width:70%;')
+              .middle
+                .text Hello World
             .item
-              img(src='/img/ny.jpg', alt='New york', style='width:100%;')
+              img(class="center-block image", src='/img/ny.jpg', alt='New york', style='width:70%;')
+              .middle
+                .text Hello World
             // Left and right controls
             a.left.carousel-control(href='#myCarousel', data-slide='prev')
               span.glyphicon.glyphicon-chevron-left
